@@ -1,3 +1,4 @@
+package bookstore;
 class bookstore {
      int bookcount = 3;
         int price = 275;
