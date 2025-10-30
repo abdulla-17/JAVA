@@ -46,7 +46,7 @@ public class Course {
 
 
 
-public class CourseTest {
+class CourseTest {
     public static void main(String[] args) {
       
         Course course1 = new Course("Java Programming", 15, 35);
