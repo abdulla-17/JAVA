@@ -17,21 +17,31 @@ class FileHandle {
             
           
 
-            // Write to the file
+        
             FileWriter writer = new FileWriter("log.txt");
             writer.write("Hello, World!\nThis is a sample file.");
             writer.close();
             System.out.println("Successfully wrote to the file.");
 
-            // Read from the file
+           
             FileReader reader = new FileReader("log.txt");
             reader.read(array);
             System.out.println("Data read from the file:");
             System.out.println(array);
             reader.close();
+
         } catch (Exception e) {
             System.out.println("An error occurred.");
             e.printStackTrace();
         }
+    
+
+boolean value = file.delete();
+    if(value) {
+      System.out.println("The File is deleted.");
     }
+    else {
+      System.out.println("The File is not deleted.");
+    }
+}  
 }
